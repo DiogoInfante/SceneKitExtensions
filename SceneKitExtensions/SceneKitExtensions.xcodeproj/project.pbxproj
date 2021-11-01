@@ -16,6 +16,17 @@
 		4D8B9BF027306D300005B33C /* SceneKitExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9BEF27306D300005B33C /* SceneKitExtensionsTests.swift */; };
 		4D8B9BFA27306D300005B33C /* SceneKitExtensionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9BF927306D300005B33C /* SceneKitExtensionsUITests.swift */; };
 		4D8B9BFC27306D300005B33C /* SceneKitExtensionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9BFB27306D300005B33C /* SceneKitExtensionsUITestsLaunchTests.swift */; };
+		4D8B9C0E27306DD60005B33C /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C0927306DD50005B33C /* SCNVector3.swift */; };
+		4D8B9C0F27306DD60005B33C /* SCNController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C0A27306DD60005B33C /* SCNController.swift */; };
+		4D8B9C1027306DD60005B33C /* SCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C0B27306DD60005B33C /* SCNView.swift */; };
+		4D8B9C1127306DD60005B33C /* SCNScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C0C27306DD60005B33C /* SCNScene.swift */; };
+		4D8B9C1227306DD60005B33C /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C0D27306DD60005B33C /* SCNNode.swift */; };
+		4D8B9C1527306E2E0005B33C /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C1427306E2E0005B33C /* CGFloat.swift */; };
+		4D8B9C1827306E4C0005B33C /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C1727306E4C0005B33C /* CALayerExtensions.swift */; };
+		4D8B9C1A27306EB30005B33C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B9C1927306EB20005B33C /* art.scnassets */; };
+		4D8B9C2027306ED10005B33C /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C1E27306ED00005B33C /* Link.swift */; };
+		4D8B9C2127306ED10005B33C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B9C1F27306ED10005B33C /* Base.swift */; };
+		4D8B9C2327306EE40005B33C /* MainScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B9C2227306EE40005B33C /* MainScene.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,17 @@
 		4D8B9BF527306D300005B33C /* SceneKitExtensionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneKitExtensionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8B9BF927306D300005B33C /* SceneKitExtensionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitExtensionsUITests.swift; sourceTree = "<group>"; };
 		4D8B9BFB27306D300005B33C /* SceneKitExtensionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitExtensionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D8B9C0927306DD50005B33C /* SCNVector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
+		4D8B9C0A27306DD60005B33C /* SCNController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNController.swift; sourceTree = "<group>"; };
+		4D8B9C0B27306DD60005B33C /* SCNView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNView.swift; sourceTree = "<group>"; };
+		4D8B9C0C27306DD60005B33C /* SCNScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNScene.swift; sourceTree = "<group>"; };
+		4D8B9C0D27306DD60005B33C /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		4D8B9C1427306E2E0005B33C /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		4D8B9C1727306E4C0005B33C /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
+		4D8B9C1927306EB20005B33C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		4D8B9C1E27306ED00005B33C /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		4D8B9C1F27306ED10005B33C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		4D8B9C2227306EE40005B33C /* MainScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MainScene.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +124,13 @@
 				4D8B9BD827306D2F0005B33C /* AppDelegate.swift */,
 				4D8B9BDA27306D2F0005B33C /* SceneDelegate.swift */,
 				4D8B9BDC27306D2F0005B33C /* ViewController.swift */,
+				4D8B9C1D27306EC20005B33C /* Model */,
+				4D8B9C0827306D4A0005B33C /* SCN Extensions */,
+				4D8B9C1327306E1D0005B33C /* Math Extensions */,
+				4D8B9C1627306E320005B33C /* CAExtensions */,
 				4D8B9BDE27306D2F0005B33C /* Main.storyboard */,
+				4D8B9C2227306EE40005B33C /* MainScene.scn */,
+				4D8B9C1927306EB20005B33C /* art.scnassets */,
 				4D8B9BE127306D300005B33C /* Assets.xcassets */,
 				4D8B9BE327306D300005B33C /* LaunchScreen.storyboard */,
 				4D8B9BE627306D300005B33C /* Info.plist */,
@@ -125,6 +153,43 @@
 				4D8B9BFB27306D300005B33C /* SceneKitExtensionsUITestsLaunchTests.swift */,
 			);
 			path = SceneKitExtensionsUITests;
+			sourceTree = "<group>";
+		};
+		4D8B9C0827306D4A0005B33C /* SCN Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B9C0A27306DD60005B33C /* SCNController.swift */,
+				4D8B9C0D27306DD60005B33C /* SCNNode.swift */,
+				4D8B9C0C27306DD60005B33C /* SCNScene.swift */,
+				4D8B9C0927306DD50005B33C /* SCNVector3.swift */,
+				4D8B9C0B27306DD60005B33C /* SCNView.swift */,
+			);
+			path = "SCN Extensions";
+			sourceTree = "<group>";
+		};
+		4D8B9C1327306E1D0005B33C /* Math Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B9C1427306E2E0005B33C /* CGFloat.swift */,
+			);
+			path = "Math Extensions";
+			sourceTree = "<group>";
+		};
+		4D8B9C1627306E320005B33C /* CAExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B9C1727306E4C0005B33C /* CALayerExtensions.swift */,
+			);
+			path = CAExtensions;
+			sourceTree = "<group>";
+		};
+		4D8B9C1D27306EC20005B33C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B9C1F27306ED10005B33C /* Base.swift */,
+				4D8B9C1E27306ED00005B33C /* Link.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8B9BE527306D300005B33C /* LaunchScreen.storyboard in Resources */,
+				4D8B9C1A27306EB30005B33C /* art.scnassets in Resources */,
 				4D8B9BE227306D300005B33C /* Assets.xcassets in Resources */,
 				4D8B9BE027306D2F0005B33C /* Main.storyboard in Resources */,
+				4D8B9C2327306EE40005B33C /* MainScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8B9C2127306ED10005B33C /* Base.swift in Sources */,
+				4D8B9C1527306E2E0005B33C /* CGFloat.swift in Sources */,
 				4D8B9BDD27306D2F0005B33C /* ViewController.swift in Sources */,
+				4D8B9C0E27306DD60005B33C /* SCNVector3.swift in Sources */,
+				4D8B9C1227306DD60005B33C /* SCNNode.swift in Sources */,
+				4D8B9C2027306ED10005B33C /* Link.swift in Sources */,
 				4D8B9BD927306D2F0005B33C /* AppDelegate.swift in Sources */,
+				4D8B9C1027306DD60005B33C /* SCNView.swift in Sources */,
 				4D8B9BDB27306D2F0005B33C /* SceneDelegate.swift in Sources */,
+				4D8B9C1827306E4C0005B33C /* CALayerExtensions.swift in Sources */,
+				4D8B9C1127306DD60005B33C /* SCNScene.swift in Sources */,
+				4D8B9C0F27306DD60005B33C /* SCNController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
