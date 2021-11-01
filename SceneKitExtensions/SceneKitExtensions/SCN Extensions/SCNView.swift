@@ -8,10 +8,10 @@ import SceneKit
 import Foundation
 
 //MARK: - SCNView Extensions
-
 extension SCNView {
-    
-    // Setup camera beahvior related to view
+    /// Setup camera beahvior related to view
+    /// - Parameters:
+    ///     - interactionMode: Camera Interaction Mode
     func setupCameraViewProperties(interactionMode: SCNInteractionMode) {
         self.allowsCameraControl = true
         self.defaultCameraController.interactionMode = interactionMode

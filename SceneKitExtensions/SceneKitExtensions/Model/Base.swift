@@ -8,35 +8,26 @@ import SceneKit
 import Foundation
 
 class Base: SCNNode {
-    
-    // Base Radius
+    /// Base Radius
     let radius: CGFloat
-    
-    // Base Height
+    /// Base Height
     let height: CGFloat
-    
-    // Base Mass
+    /// Base Mass
     let mass: CGFloat
-    
-    // Base Color
+    /// Base Color
     let textureColor: UIColor
-
+    /// Initializes a base node
     init(radius: CGFloat, height: CGFloat, mass: CGFloat, textureColor: UIColor) {
-        
         self.radius = radius
         self.height = height
         self.mass = mass
         self.textureColor = textureColor
-        
         super.init()
-        
-        // Link Geometry
+        /// Link Geometry
         self.geometry = SCNNode(geometry:  SCNCylinder(radius: radius, height: height)).geometry
-        
-        // Link Material
+        /// Link Material
         self.setupMaterial(textureColor: textureColor)
-        
-        // Link Pysicis
+        /// Link Pysicis
         self.setupPhysics(mass: mass, gravityEffect: false, bodyType: .static)
     }
     

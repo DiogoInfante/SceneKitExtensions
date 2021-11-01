@@ -8,10 +8,8 @@ import UIKit
 import Foundation
 
 //MARK: - CGFloat Extensions
-
 extension CGFloat {
-    
-    // Pi Value
+    /// Pi Value
     static func pi()-> CGFloat {
         return 3.1415926
     }

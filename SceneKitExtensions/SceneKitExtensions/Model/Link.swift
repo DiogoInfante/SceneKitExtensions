@@ -8,38 +8,28 @@ import SceneKit
 import Foundation
 
 class Link: SCNNode {
-    
-    // Link Radius
+    /// Link Radius
     let radius: CGFloat
-    
-    // Link Height
+    /// Link Height
     let height: CGFloat
-    
-    // Link Mass
+    /// Link Mass
     let mass: CGFloat
-    
-    // Link Color
+    /// Link Color
     let textureColor: UIColor
-
+    /// Initializes a link node
     init(radius: CGFloat, height: CGFloat, mass: CGFloat, textureColor: UIColor) {
-        
         self.radius = radius
         self.height = height
         self.mass = mass
         self.textureColor = textureColor
-        
         super.init()
-        
-        // Link Geometry
+        /// Link Geometry
         self.geometry = SCNNode(geometry:  SCNCylinder(radius: radius, height: height)).geometry
-        
-        // Link Material
+        /// Link Material
         self.setupMaterial(textureColor: textureColor)
-        
-        // Link Pysicis
+        /// Link Pysicis
         self.setupPhysics(mass: mass, gravityEffect: false, bodyType: .dynamic)
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

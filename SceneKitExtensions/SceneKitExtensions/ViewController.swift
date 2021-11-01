@@ -9,33 +9,28 @@ import SceneKit
 import QuartzCore
 
 class ViewController: UIViewController, SCNController {
-    
-    // SCN Controller properties
+    /// SCN Controller properties
     var scene = SCNScene()
-
+    /// SCN View
     var sceneView = SCNView()
-    
-    // Camera
+    /// Camera
     let cameraNode = SCNNode()
-    
-    // Floor
+    /// Floor
     let floorNode = SCNNode()
-    
-    // Ambient Light
+    /// Ambient Light
     let ambientLight = SCNNode()
-    
+    /// Base
     var base = SCNNode()
-    
+    /// First Connector
     var firstConnector = SCNNode()
-    
-    // Setup scene referent to current view controller with desired properties
+    /// Setups scene referent to current view controller with desired properties
     fileprivate func setupScene() {
         scene.addAmbientLight(ambientLightNode: ambientLight)
         scene.addCamera(cameraNode: cameraNode, position: SCNVector3(40, 20, 200))
         scene.addFloor(floorNode: floorNode, textureImage: UIImage(named: "floorTexture")!)
         scene.addGradientBackground(frame: view.frame, colors: [UIColor.blue.cgColor, UIColor.cyan.cgColor])
     }
-    
+    /// Setups manipulator base
     fileprivate func baseSetup() {
         for child in base.childNodes {
             child.setupMaterial(textureColor: .black)
@@ -43,10 +38,9 @@ class ViewController: UIViewController, SCNController {
             child.setupDetailedMeshPhysics(mass: 30, gravityEffect: false)
         }
     }
-    
+    /// Setups manipulator first connector
     fileprivate func firstConnectorSetup() {
         firstConnector.setupMaterial(textureColor: .darkGray)
-
         for child in firstConnector.childNodes {
             child.setupPhysics(mass: 2, gravityEffect: false, bodyType: .static)
             child.setupMaterial(textureColor: .darkGray)
@@ -54,34 +48,25 @@ class ViewController: UIViewController, SCNController {
         }
         firstConnector.setupPhysics(mass: 10, gravityEffect: false, bodyType: .dynamic)
     }
-    
-    // View did laod
+    /// View did laod
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /// TO DO: Update the way to add icons to Scene
         scene = SCNScene(named: "art.scnassets/RobotManipulatorScene.scn")!
-        
         base = scene.rootNode.childNode(withName: "1_Base", recursively: true)!
-    
         firstConnector = scene.rootNode.childNode(withName: "2_FirstConnector", recursively: true)!
-
-        // Base setup
+        /// Base setup
         baseSetup()
-        
-        // First Connector setup
+        /// First Connector setup
         firstConnectorSetup()
-                
-        // Scene view setup
+        /// Scene view setup
         setupSceneView()
-        
-        // Scene properties setup
+        /// Scene properties setup
         setupScene()
-
-        // Debug Mode
+        /// Debug Mode
         debugMode()
     }
-    
-    // Release any cached data, images, etc that aren't in use
+    /// Release any cached data, images, etc that aren't in use
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
