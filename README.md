@@ -4,3 +4,4 @@ This repository contains methods to set up Scene Kit properties. It has extensio
 
 I am currently implementing five degrees of freedom robotic manipulator. The idea is to control it with the app.
 
+ ![Image of AppContainer](Resources/robot.png)
